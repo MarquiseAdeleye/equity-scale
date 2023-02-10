@@ -12,37 +12,38 @@ import UIKit
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color("darkBlue")
+            Color("gold")
                 .ignoresSafeArea()
             Image("grid")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 388.0, height: 200.0)
+                .opacity(100.0)
             VStack {
                 Text("Equity Scale")
                     .font(.system(size: 65))
-                    .foregroundColor(Color("blue"))
+                    .foregroundColor(Color("darkBlue"))
                     .bold()
                     .padding()
-                    .offset(x: 0, y: -39)
-                Text("Begin Test")
-                    .padding()
-                    .font(.system(size: 65))
-                    .foregroundColor(Color("darkBlue"))
-                    .background(
-                        RoundedRectangle(
-                            
-                            cornerRadius: 20,
-                            style: .continuous
-                        )
-                        .fill(Color("gold"))
-                        .frame(width: 342, height: 342)
-                    )
-                    .offset(x: 0, y: 150)
+                    .offset(x: 0, y: 27)
+                Button("Begin Test"){
+                    
+                }
+                .padding()
+                .font(.system(size: 65))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("darkBlue"), lineWidth: 5)
+                )
+                .frame(width: 363, height: 93)
+                .offset(x: 0, y: 150)
                 Button("i"){
-                    var popUpWindow: PopUpWindow!
-                    popUpWindow = PopUpWindow(title: "Error", text: "Sorry, that email address is already used!", buttontext: "OK")
-                    self.present(popUpWindow, animated: true, completion: true)
+                    //  var popUpWindow: PopUpWindow!
+                    // popUpWindow = PopUpWindow(title: "Error", text: "Sorry, that email address is already used!", buttontext: "OK")
+                    //  self.present(popUpWindow, animated: true, completion: true)
                 }
                 .padding(150)
                 .font(.system(size: 72
