@@ -10,11 +10,14 @@ import UIKit
 
 
 struct ContentView: View {
+    
+  //  @EnvironmentObject var presentedView: presentView
+    
     var body: some View {
         ZStack {
             Color("gold")
                 .ignoresSafeArea()
-            Image("grid")
+            Image("grid2")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 388.0, height: 200.0)
@@ -40,6 +43,8 @@ struct ContentView: View {
                 )
                 .frame(width: 363, height: 93)
                 .offset(x: 0, y: 150)
+                
+                /*
                 Button("i"){
                     //  var popUpWindow: PopUpWindow!
                     // popUpWindow = PopUpWindow(title: "Error", text: "Sorry, that email address is already used!", buttontext: "OK")
@@ -54,6 +59,8 @@ struct ContentView: View {
                         .fill(Color("blue"))
                         .frame(width: 83, height: 101))
                 .offset(x: 110, y: 200)
+                 
+                 */
             }
         }
     }

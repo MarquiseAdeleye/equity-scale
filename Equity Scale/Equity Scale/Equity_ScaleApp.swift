@@ -10,8 +10,12 @@ import SwiftUI
 @main
 struct Equity_ScaleApp: App {
     var body: some Scene {
+
         WindowGroup {
             ContentView()
+            //TransitionView()
+             //   .environmentObject(presentView())
         }
+        
     }
 }
