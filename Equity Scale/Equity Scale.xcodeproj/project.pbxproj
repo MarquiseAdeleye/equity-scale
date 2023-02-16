@@ -19,6 +19,7 @@
 		318309B62992ACAF00F7FCD4 /* test-logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318309B52992ACAF00F7FCD4 /* test-logic.swift */; };
 		318309B82992ACBD00F7FCD4 /* dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318309B72992ACBD00F7FCD4 /* dashboard.swift */; };
 		318309BA299535C900F7FCD4 /* info-page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318309B9299535C900F7FCD4 /* info-page.swift */; };
+		318309BC299DF4D300F7FCD4 /* transition-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318309BB299DF4D300F7FCD4 /* transition-view.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		318309B52992ACAF00F7FCD4 /* test-logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "test-logic.swift"; sourceTree = "<group>"; };
 		318309B72992ACBD00F7FCD4 /* dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboard.swift; sourceTree = "<group>"; };
 		318309B9299535C900F7FCD4 /* info-page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "info-page.swift"; sourceTree = "<group>"; };
+		318309BB299DF4D300F7FCD4 /* transition-view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "transition-view.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				318309822992848900F7FCD4 /* Equity_ScaleApp.swift */,
+				318309BB299DF4D300F7FCD4 /* transition-view.swift */,
 				318309842992848900F7FCD4 /* ContentView.swift */,
 				318309B9299535C900F7FCD4 /* info-page.swift */,
 				318309AD2992ABDF00F7FCD4 /* test-screen.swift */,
@@ -277,6 +280,7 @@
 				318309852992848900F7FCD4 /* ContentView.swift in Sources */,
 				318309B02992AC0B00F7FCD4 /* resources.swift in Sources */,
 				318309BA299535C900F7FCD4 /* info-page.swift in Sources */,
+				318309BC299DF4D300F7FCD4 /* transition-view.swift in Sources */,
 				318309AE2992ABDF00F7FCD4 /* test-screen.swift in Sources */,
 				318309832992848900F7FCD4 /* Equity_ScaleApp.swift in Sources */,
 				318309B82992ACBD00F7FCD4 /* dashboard.swift in Sources */,
