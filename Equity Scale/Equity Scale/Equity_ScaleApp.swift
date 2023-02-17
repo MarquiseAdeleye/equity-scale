@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct Equity_ScaleApp: App {
+    @StateObject var PresentView = presentView()
+    
     var body: some Scene {
 
         WindowGroup {
-            ContentView()
-            //TransitionView()
-             //   .environmentObject(presentView())
+           // ContentView()
+            TransitionView()
+                .environmentObject(PresentView)
         }
         
     }
