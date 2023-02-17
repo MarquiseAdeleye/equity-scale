@@ -10,7 +10,7 @@ import UIKit
 
 struct Dashboard: View {
     
-   // @EnvironmentObject var presentedView: presentView
+    @EnvironmentObject var presentedView: presentView
     
     var body: some View {
         ZStack {
@@ -46,6 +46,7 @@ struct Dashboard: View {
                 
                 Button("Revisit Test"){
                     
+                    presentedView.currentView = .testScreen
                 }
                 .padding()
                 .frame(width: 363, height: 93)
@@ -61,8 +62,10 @@ struct Dashboard: View {
               
                 
                 Button("Resources"){
-    
                     
+                    //Making the call that causes this button to go to the resources page
+    
+                    presentedView.currentView = .resources
                 }
                 .padding()
                 .frame(width: 363, height: 93)

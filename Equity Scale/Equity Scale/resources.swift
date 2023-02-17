@@ -11,7 +11,7 @@ import UIKit
 
 struct Resources: View {
     
-   // @EnvironmentObject var presentedView: presentView
+    @EnvironmentObject var presentedView: presentView
     
     var body: some View {
         ZStack {

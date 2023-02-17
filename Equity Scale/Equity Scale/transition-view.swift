@@ -9,10 +9,10 @@ import SwiftUI
 
 class presentView: ObservableObject {
     enum availableViews {
-        case resources, testScreen, home, dash
+        case resources, testScreen, Home, Dash
     }
     
-    @Published var currentView: availableViews = .resources
+    @Published var currentView: availableViews = .Home
 }
 
 struct TransitionView: View {
@@ -24,8 +24,8 @@ struct TransitionView: View {
         switch PresentView.currentView{
         case .resources: Resources()
         case .testScreen: testScreen()
-        case .home: ContentView()
-        case .dash: Dashboard()
+        case .Home: ContentView()
+        case .Dash: Dashboard()
         }
         
     }
