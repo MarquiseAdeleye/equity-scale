@@ -47,6 +47,7 @@ struct Resources: View {
                 
                 Button(">"){
                     
+                    presentedView.currentView = .Dash
                 }
                 .padding(150)
                 .font(.system(size: 72

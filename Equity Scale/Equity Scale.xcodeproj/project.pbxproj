@@ -19,6 +19,7 @@
 		318309B62992ACAF00F7FCD4 /* test-logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318309B52992ACAF00F7FCD4 /* test-logic.swift */; };
 		318309B82992ACBD00F7FCD4 /* dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318309B72992ACBD00F7FCD4 /* dashboard.swift */; };
 		318309BC299DF4D300F7FCD4 /* transition-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318309BB299DF4D300F7FCD4 /* transition-view.swift */; };
+		31C4EC1029A3E52E00D24025 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C4EC0F29A3E52E00D24025 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		318309B52992ACAF00F7FCD4 /* test-logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "test-logic.swift"; sourceTree = "<group>"; };
 		318309B72992ACBD00F7FCD4 /* dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboard.swift; sourceTree = "<group>"; };
 		318309BB299DF4D300F7FCD4 /* transition-view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "transition-view.swift"; sourceTree = "<group>"; };
+		31C4EC0F29A3E52E00D24025 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				318309BB299DF4D300F7FCD4 /* transition-view.swift */,
 				318309842992848900F7FCD4 /* ContentView.swift */,
 				318309AD2992ABDF00F7FCD4 /* test-screen.swift */,
+				31C4EC0F29A3E52E00D24025 /* test.swift */,
 				318309AF2992AC0B00F7FCD4 /* resources.swift */,
 				318309B52992ACAF00F7FCD4 /* test-logic.swift */,
 				318309B72992ACBD00F7FCD4 /* dashboard.swift */,
@@ -279,6 +282,7 @@
 				318309BC299DF4D300F7FCD4 /* transition-view.swift in Sources */,
 				318309AE2992ABDF00F7FCD4 /* test-screen.swift in Sources */,
 				318309832992848900F7FCD4 /* Equity_ScaleApp.swift in Sources */,
+				31C4EC1029A3E52E00D24025 /* test.swift in Sources */,
 				318309B82992ACBD00F7FCD4 /* dashboard.swift in Sources */,
 				318309B62992ACAF00F7FCD4 /* test-logic.swift in Sources */,
 			);
@@ -432,6 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Equity Scale/Equity_Scale.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Equity Scale/Preview Content\"";
@@ -448,7 +453,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -469,6 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Equity Scale/Equity_Scale.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Equity Scale/Preview Content\"";
@@ -485,7 +491,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
