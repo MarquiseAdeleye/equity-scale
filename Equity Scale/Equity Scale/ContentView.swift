@@ -15,6 +15,8 @@ struct ContentView: View {
     
     @State var isShowingInfo = false
     
+    
+    
     var body: some View {
         ZStack{
             Color("darkBlue")
@@ -72,7 +74,9 @@ struct ContentView: View {
                 }
                 .offset(x: 110, y: 200)
                 
-                
+                Text("\(presentedView.score)")
+                    .foregroundColor(.white)
+                    .font(.system(size: 50))
             }
             
         }
@@ -82,7 +86,7 @@ struct ContentView: View {
                 ZStack{
                     Color("darkBlue")
                         .ignoresSafeArea()
-                        .opacity(0.5)
+                        .opacity(0.8)
                     VStack{
                         Text("Company Mission: Racial justice is a buzzword and commodity in Detroit, resulting in an overabundance of justice-illiterate institutions and leaders that harm and exclude innovative racial justice thinkers and change-makers. Resources are funneled into the same superficial initiatives (80% of nonprofits nationally funded are white led), while Black, Indigenous, and POC communities are denied access to what is owed to us for radical change. n/We commit as Technology Developers to challenge oppressive institutions and structures in Detroit nonprofits by building power for Black, Indigenous, and POC communities for our mutual liberation. We will do this by creating a system to measure inequities in nonprofit leadership and work with foundations & community partners to hold leadership accountable to make necessary changes to move toward a more equitable organization. ")
                         .padding()
