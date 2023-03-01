@@ -34,7 +34,7 @@ struct Dashboard: View {
                 
                 
                 
-                Text("1 Michigan for the Global Majority: \n info@1michigan.org \n Wisdow Institute: \n gwen@thewisdominstitute.org \n Community Connections of Detroit: \n lisa@communityconnectionsofdetroit.org")
+                Text("\(105 - presentedView.score) %")
                     .padding()
                     .frame(width: 363, height: 93)
                     .font(.system(size: 18))

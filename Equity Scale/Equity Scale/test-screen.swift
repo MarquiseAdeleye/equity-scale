@@ -41,154 +41,480 @@ extension View{
     }
 }
 
-struct testScreen: View {
+struct test54: View {
     
     @EnvironmentObject var presentedView: presentView
-    @State var score = 0
     
     var body: some View {
         
-        ZStack{
         
-
-                
-                
-                ZStack{
+        ZStack{
+            Color("darkBlue")
+                .ignoresSafeArea()
+            Image("grid2")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 388.0, height: 200.0)
+                .opacity(100.0)
+            ZStack{
+                Button("i"){
                     
-                    Button("i"){
-                        
-                        //   isShowingInfo.toggle()
-                        
-                        
-                    }
-                    .padding(150)
-                    .font(.system(size: 30))
-                    .foregroundColor(Color("darkBlue"))
-                    .background(
-                        Circle()
-                        // .strokeBorder(Color("gold"), lineWidth: 5)
-                            .fill(Color("blue"))
-                            .frame(width: 46, height: 46)
-                        
-                        
-                    )
+                    //   isShowingInfo.toggle()
+                    
+                    
+                }
+                .padding(150)
+                .font(.system(size: 30))
+                .foregroundColor(Color("darkBlue"))
+                .background(
                     Circle()
-                        .strokeBorder(Color("gold"), lineWidth:3)
+                    // .strokeBorder(Color("gold"), lineWidth: 5)
+                        .fill(Color("blue"))
                         .frame(width: 46, height: 46)
-                }
-                .sticky()
-                .offset(x: 135, y: 0
-                )
-                
-                
-                ZStack {
-                    /*
-                     Color("darkBlue")
-                     .ignoresSafeArea()
-                     
-                     Image("grid")
-                     .resizable()
-                     .aspectRatio(contentMode: .fill)
-                     .frame(width: 388.0, height: 9094)
-                     */
-                    VStack {
-                        ZStack{
-                            Text("Placeholder")
-                                .padding()
-                                .frame(width: 342, height: 342)
-                                .font(.system(size: 18))
-                                .foregroundColor(Color("darkBlue"))
-                                .background(Color("gold"))
-                                .cornerRadius(80)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 80)
-                                        .stroke(Color("blue"), lineWidth: 10)
-                                )
-                            Button{
-                            
-                            }label: {
-                            Text("place")
-                                    .padding()
-                                    .font(.system(size: 15))
-                                    .foregroundColor(Color("gold"))
-                                    .background(Color("darkBlue"))
-                                    .cornerRadius(100)
-                                    .overlay(
-                                    RoundedRectangle(cornerRadius: 100)
-                                    .stroke(Color("blue"), lineWidth: 3)
-                                    )
-                                    .offset(x: 0, y: 50)
-                            }
-                            .frame(width: 367.0, height: 50.0)
-                        }
-                        
-                        /*
-                         Button("Begin Test"){
-                         
-                         }
-                         .padding()
-                         .font(.system(size: 65))
-                         .foregroundColor(Color("darkBlue"))
-                         .background(Color("gold"))
-                         .cornerRadius(80)
-                         .overlay(
-                         RoundedRectangle(cornerRadius: 80)
-                         .stroke(Color("blue"), lineWidth: 5)
-                         )
-                         .frame(width: 363, height: 93)
-                         .offset(x: 0, y: 150)
-                         
-                         Button("Begin Test"){
-                         
-                         }
-                         .padding()
-                         .font(.system(size: 65))
-                         .foregroundColor(Color("darkBlue"))
-                         .background(Color("gold"))
-                         .cornerRadius(80)
-                         .overlay(
-                         RoundedRectangle(cornerRadius: 80)
-                         .stroke(Color("blue"), lineWidth: 5)
-                         )
-                         .frame(width: 363, height: 93)
-                         .offset(x: 0, y: 150)
-                         Button("i"){
-                         //  var popUpWindow: PopUpWindow!
-                         // popUpWindow = PopUpWindow(title: "Error", text: "Sorry, that email address is already used!", buttontext: "OK")
-                         //  self.present(popUpWindow, animated: true, completion: true)
-                         }
-                         .padding(150)
-                         .font(.system(size: 72
-                         ))
-                         .foregroundColor(Color("darkBlue"))
-                         .background(
-                         Circle()
-                         .fill(Color("blue"))
-                         .frame(width: 83, height: 101))
-                         .offset(x: 110, y: 200)
-                         }
-                         */
-                    }
                     
-                }
-                Image("grid")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width:500.0, height: 9100)
-                    .coordinateSpace(name: "container")
-                    .frame(width: 390, height: 9094)
-                    .offset(x: 22, y:-230)
+                    
+                )
+                Circle()
+                    .strokeBorder(Color("gold"), lineWidth:3)
+                    .frame(width: 46, height: 46)
+            }
+            .offset(x: 120, y:-359)
+            
+            VStack {
+                Text("Of those that are BIPOC how many of them that have children currently or have sent their kids to the schools in the area you serve?")
+                    .fontWeight(.bold)
+                    .padding()
+                    .frame(width: 342, height: 342)
+                    .font(.system(size: 18))
+                    .foregroundColor(Color("darkBlue"))
+                    .background(Color("gold"))
+                    .cornerRadius(80)
+                    .background(
+                        RoundedRectangle(cornerRadius: 80)
+                            .stroke(Color("blue"), lineWidth: 10)
+                    )
+                    .offset(x: 0, y:16)
                 
+                
+                Button("0"){
+                    
+                    //  presentedView.currentView = .Home
+                    
+                    presentedView.currentView = .test5
+                }
+                .padding()
+                .frame(width: 363, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: 0, y: 30)
+                
+                Button("1 - 50 %"){
+                    
+                    //  presentedView.currentView = .Home
+                    
+                    presentedView.score += 2
+                    
+                    presentedView.currentView = .test5
+                }
+                .padding()
+                .frame(width: 363, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: 0, y: 49)
+                
+                Button("51 - 100%"){
+                    
+                    //  presentedView.currentView = .testScreen
+                    presentedView.score += 5
+                    
+                    presentedView.currentView = .test5
+                }
+                .padding()
+                .frame(width: 363, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: 0, y:72)
+                
+                Button("Does not apply"){
+                    
+                    //  presentedView.currentView = .testScreen
+                    presentedView.score += 5
+                    
+                    presentedView.currentView = .test5
+                }
+                .padding()
+                .frame(width: 363, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: 0, y:93)
+                
+                Button("Next"){
+                    
+                
+                    presentedView.currentView = .test5
+                }
+                .padding()
+                .frame(width: 150, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: 100, y: 108)
+                
+                Button("Previous"){
+                    
+                
+                    presentedView.currentView = .test3
+                }
+                .padding()
+                .frame(width: 150, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: -100, y: 50)
+                /*
+                Text("\(presentedView.score)")
+                    .foregroundColor(.white)
+                    .font(.system(size: 50))
+                */
                 
             }
-            .background(Color("darkBlue"))
-            
-        }
-    
-    
-    struct testScreen_Previews: PreviewProvider {
-        static var previews: some View {
-            testScreen()
         }
     }
 }
+
+struct test55: View {
+    
+    @EnvironmentObject var presentedView: presentView
+    
+    var body: some View {
+        
+        
+        ZStack{
+            Color("darkBlue")
+                .ignoresSafeArea()
+            Image("grid2")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 388.0, height: 200.0)
+                .opacity(100.0)
+            ZStack{
+                Button("i"){
+                    
+                    //   isShowingInfo.toggle()
+                    
+                    
+                }
+                .padding(150)
+                .font(.system(size: 30))
+                .foregroundColor(Color("darkBlue"))
+                .background(
+                    Circle()
+                    // .strokeBorder(Color("gold"), lineWidth: 5)
+                        .fill(Color("blue"))
+                        .frame(width: 46, height: 46)
+                    
+                    
+                )
+                Circle()
+                    .strokeBorder(Color("gold"), lineWidth:3)
+                    .frame(width: 46, height: 46)
+            }
+            .offset(x: 120, y:-359)
+            
+            VStack {
+                Text("If you work in a community that serves people that speak a language other than English as a first language, do you have a person that is fluent in that language on the board?")
+                    .fontWeight(.bold)
+                    .padding()
+                    .frame(width: 342, height: 342)
+                    .font(.system(size: 18))
+                    .foregroundColor(Color("darkBlue"))
+                    .background(Color("gold"))
+                    .cornerRadius(80)
+                    .background(
+                        RoundedRectangle(cornerRadius: 80)
+                            .stroke(Color("blue"), lineWidth: 10)
+                    )
+                    .offset(x: 0, y:-5)
+                
+                
+                Button("Yes"){
+                    
+                    //  presentedView.currentView = .Home
+                    
+                    presentedView.score += 5
+                    presentedView.currentView = .test14
+                }
+                .padding()
+                .frame(width: 363, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: 0, y: 15)
+                
+                Button("No"){
+                    
+                    //  presentedView.currentView = .Home
+                    
+                    
+                    
+                    presentedView.currentView = .test14
+                }
+                .padding()
+                .frame(width: 363, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: 0, y: 35)
+                
+                Button("We do NOT serve languages other than English"){
+                    
+                    //  presentedView.currentView = .testScreen
+                    presentedView.score += 5
+                    
+                    presentedView.currentView = .test14
+                }
+                .padding()
+                .frame(width: 363, height: 50)
+                .font(.system(size: 15))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: 0, y:55)
+                
+                Button("Next"){
+                    
+                    
+                    presentedView.currentView = .test6
+                }
+                .padding()
+                .frame(width: 150, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: 100, y: 108)
+                
+                Button("Previous"){
+                    
+                    
+                    presentedView.currentView = .test4
+                }
+                .padding()
+                .frame(width: 150, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: -100, y: 50)
+                /*
+                Text("\(presentedView.score)")
+                    .foregroundColor(.white)
+                    .font(.system(size: 50))
+                */
+                
+            }
+        }
+    }
+}
+struct test58: View {
+    
+    @EnvironmentObject var presentedView: presentView
+    
+    var body: some View {
+        
+        
+        ZStack{
+            Color("darkBlue")
+                .ignoresSafeArea()
+            Image("grid2")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 388.0, height: 200.0)
+                .opacity(100.0)
+            ZStack{
+                Button("i"){
+                    
+                    //   isShowingInfo.toggle()
+                    
+                    
+                }
+                .padding(150)
+                .font(.system(size: 30))
+                .foregroundColor(Color("darkBlue"))
+                .background(
+                    Circle()
+                    // .strokeBorder(Color("gold"), lineWidth: 5)
+                        .fill(Color("blue"))
+                        .frame(width: 46, height: 46)
+                    
+                    
+                )
+                Circle()
+                    .strokeBorder(Color("gold"), lineWidth:3)
+                    .frame(width: 46, height: 46)
+            }
+            .offset(x: 120, y:-359)
+            
+            VStack {
+                Text("Of those that are BIPOC how many identify as being apart of the LGBTQ+ community?")
+                    .fontWeight(.bold)
+                    .padding()
+                    .frame(width: 342, height: 342)
+                    .font(.system(size: 18))
+                    .foregroundColor(Color("darkBlue"))
+                    .background(Color("gold"))
+                    .cornerRadius(80)
+                    .background(
+                        RoundedRectangle(cornerRadius: 80)
+                            .stroke(Color("blue"), lineWidth: 10)
+                    )
+                    .offset(x: 0, y:-5)
+                
+                
+                Button("Yes"){
+                    
+                    //  presentedView.currentView = .Home
+                    
+                    presentedView.score += 5
+                    presentedView.currentView = .test9
+                }
+                .padding()
+                .frame(width: 363, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: 0, y: 15)
+        
+                
+                Button("No"){
+                    
+                    //  presentedView.currentView = .testScreen
+                    
+                   
+                    presentedView.currentView = .test9
+                }
+                .padding()
+                .frame(width: 363, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: 0, y:55)
+                
+                Button("Next"){
+                    
+                    
+                    presentedView.currentView = .test9
+                }
+                .padding()
+                .frame(width: 150, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: 100, y: 108)
+                
+                Button("Previous"){
+                    
+                    
+                    presentedView.currentView = .test7
+                }
+                .padding()
+                .frame(width: 150, height: 50)
+                .font(.system(size: 20))
+                .foregroundColor(Color("darkBlue"))
+                .background(Color("blue"))
+                .cornerRadius(80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80)
+                        .stroke(Color("gold"), lineWidth: 5)
+                )
+                .offset(x: -100, y: 50)
+                /*
+                Text("\(presentedView.score)")
+                    .foregroundColor(.white)
+                    .font(.system(size: 50))
+                */
+                
+            }
+        }
+    }
+}
+
+
+    
+    struct testScreen_Previews: PreviewProvider {
+        static var previews: some View {
+            test55()
+        }
+    }
+
