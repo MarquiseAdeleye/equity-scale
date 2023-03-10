@@ -9,8 +9,8 @@ import SwiftUI
 
 class presentView: ObservableObject {
     
-    @Published  var score = 0
-    @Published  var scoreView = 0
+    @Published  var score = 0.0
+    @Published  var scoreValue = 0
     
     func addScore() {
         
