@@ -34,7 +34,7 @@ struct Dashboard: View {
                 
                 
                 
-                Text("\(105 - presentedView.score) %")
+                Text("\(round((presentedView.score / 105) * 100).formatted(.number.precision(.fractionLength(0)))) %")
                     .padding()
                     .frame(width: 363, height: 93)
                     .font(.system(size: 18))
@@ -81,7 +81,9 @@ struct Dashboard: View {
                         .stroke(Color("blue"), lineWidth: 10)
                 )
                 .offset(x: 0, y: 200)
-                
+                .onTapGesture {
+                    presentedView.currentView = .resources
+                }
                 
                 ZStack{
                     Button("i"){

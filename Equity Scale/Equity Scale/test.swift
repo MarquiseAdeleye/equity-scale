@@ -82,6 +82,7 @@ import SwiftUI
                     )
                     .offset(x: 0, y: 15)
                     
+                    
                     Button("50 - 90 %"){
                         
                         //  presentedView.currentView = .Home
