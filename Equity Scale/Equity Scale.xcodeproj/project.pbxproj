@@ -20,6 +20,7 @@
 		318309B82992ACBD00F7FCD4 /* dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318309B72992ACBD00F7FCD4 /* dashboard.swift */; };
 		318309BC299DF4D300F7FCD4 /* transition-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318309BB299DF4D300F7FCD4 /* transition-view.swift */; };
 		31C4EC1029A3E52E00D24025 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C4EC0F29A3E52E00D24025 /* test.swift */; };
+		31E251BA2A014D2C0077FB49 /* question-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E251B92A014D2C0077FB49 /* question-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		318309B72992ACBD00F7FCD4 /* dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboard.swift; sourceTree = "<group>"; };
 		318309BB299DF4D300F7FCD4 /* transition-view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "transition-view.swift"; sourceTree = "<group>"; };
 		31C4EC0F29A3E52E00D24025 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		31E251B92A014D2C0077FB49 /* question-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "question-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				318309842992848900F7FCD4 /* ContentView.swift */,
 				318309AD2992ABDF00F7FCD4 /* test-screen.swift */,
 				31C4EC0F29A3E52E00D24025 /* test.swift */,
+				31E251B92A014D2C0077FB49 /* question-ViewModel.swift */,
 				318309AF2992AC0B00F7FCD4 /* resources.swift */,
 				318309B52992ACAF00F7FCD4 /* test-logic.swift */,
 				318309B72992ACBD00F7FCD4 /* dashboard.swift */,
@@ -281,6 +284,7 @@
 				318309B02992AC0B00F7FCD4 /* resources.swift in Sources */,
 				318309BC299DF4D300F7FCD4 /* transition-view.swift in Sources */,
 				318309AE2992ABDF00F7FCD4 /* test-screen.swift in Sources */,
+				31E251BA2A014D2C0077FB49 /* question-ViewModel.swift in Sources */,
 				318309832992848900F7FCD4 /* Equity_ScaleApp.swift in Sources */,
 				31C4EC1029A3E52E00D24025 /* test.swift in Sources */,
 				318309B82992ACBD00F7FCD4 /* dashboard.swift in Sources */,
@@ -449,6 +453,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -457,7 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "madeleye.Equity-Scale";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -487,6 +492,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -495,7 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "madeleye.Equity-Scale";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
